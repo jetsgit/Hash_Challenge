@@ -1,9 +1,9 @@
 require 'date'
-require './days_in_month'
+require ::File.expand_path( '../days_in_month', __FILE__ )
 
 module TwoLetterDay
+  include Days
   def two_letter_day(year, month)
-    include Days
     days = days_in_month(year, month)  
     date =  Date.new(year,month,1)
     days_hash = {}

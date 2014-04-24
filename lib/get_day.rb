@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 
-require './two_letter_day'
+require ::File.expand_path( '../two_letter_day', __FILE__ )
 
 include TwoLetterDay
 
