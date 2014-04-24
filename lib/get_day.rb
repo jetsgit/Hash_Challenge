@@ -16,6 +16,7 @@ end
 puts "Enter month: \n"
 
 month = Integer( gets )
+
 unless ( month.between?(1,12) )
    puts "Not a valid entry: Please enter numerical month between 1-12: "
    month = Integer( gets )
@@ -33,5 +34,3 @@ unless date <= days.length || date < 1
 end
 
 puts "Two letter abbreviation for your date is: #{days[date]}"
-
-
